@@ -24,6 +24,36 @@ header {
   border-radius: 5px;
 }
 
+#auth-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding: 0 16px;
+}
+
+#auth-status {
+  font-size: 14px;
+  padding: 6px 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+#login-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+#login-form input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
 header h1 {
   margin-bottom: 10px;
 }
@@ -38,6 +68,16 @@ main {
 @media (min-width: 768px) {
   main {
     grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  #auth-panel {
+    justify-content: center;
+  }
+
+  #login-form {
+    justify-content: center;
   }
 }
 
